@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuracion de Grid*/
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+        'footer';
+}
+
+
+/* Estilo de barra de navegacion */
+
+.header {
+    background-color: gold;
+    grid-area: header;
+}
+
+.navbar ul {
+    display: flex;
+    padding-left: 50px;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 10px 10px 10px 10px;
+    padding: 0 15px 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.navbar a:visited {
+    text-decoration: none;
+}
+
+/* Estilo del pie de pagina */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    background-color: gold;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Estilo de index */
+
+.mainIndex {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(media/legal.jpg); /* La imagen es un placeholder, estoy esperando que me pasen un banner propio*/
+    background-color: rgb(208, 198, 240);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(107, 10, 78,);
+    font-family: 'Viaoda Libre', cursive;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(107, 10, 78,);
+    font-family: 'Viaoda Libre', cursive;
+}
+
+/* Estilo de conocenos*/
+
+.mainConocenos {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(208, 198, 240);
+}
+
+.logoConocenos {
+    padding: 25px;
+}
+
+.descripcionEstudio {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    padding: 25px;
+}
+
+
+/* Estilo de staff*/
+
+.mainStaff {
+    grid-area: main;
+    background-color: rgb(208, 198, 240);
+}
+
+.containerAbogado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 55px;
+}
+
+.fotoPerfil {
+    height: 300px;
+}
+
+.descripcionAbogado {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+}
+
+/* Estilo de contactanos*/
+
+.mainContactanos {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px;
+    background-color: rgb(208, 198, 240);
+}
+
+.formEmail {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+}
+
+.telefono {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Estilo Ubicacion */
+
+.mainUbicacion {
+    grid-area: main;
+    background-color: rgb(208, 198, 240);
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.mapa h3 {
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
