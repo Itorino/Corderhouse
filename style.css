@@ -17,7 +17,7 @@
 /* Estilo de barra de navegacion */
 
 .header {
-    background-color: gold;
+    background: linear-gradient(90deg, gold, white , gold);
     grid-area: header;
 }
 
@@ -47,7 +47,7 @@
     grid-area: footer;
     display: flex;
     justify-content: space-between;
-    background-color: gold;
+    background:linear-gradient(45deg, white, gold, white);
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -90,7 +90,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(208, 198, 240);
+    background:radial-gradient(grey, black);
 }
 
 .logoConocenos {
@@ -124,6 +124,11 @@
     height: 300px;
 }
 
+.fotoPerfil:hover {
+    transform: scale(2,2);
+    transition: 1s;
+}
+
 .descripcionAbogado {
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
@@ -138,10 +143,16 @@
     justify-content: space-around;
     align-items: center;
     padding: 70px;
-    background-color: rgb(208, 198, 240);
+    background-color: navy;
+    animation: fondo 5s infinite;
 }
 
-.formEmail {
+@keyframes fondo {
+    0% {background-color: navy;}
+    50% {background-color: white;}
+    100% {background-color: navy;}}
+
+    .formEmail {
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
 }
